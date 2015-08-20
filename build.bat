@@ -1,0 +1,1 @@
+haxe -cp src/ -lib waxe -main Main -cpp bin/windows

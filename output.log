@@ -1,0 +1,13 @@
+
+C:\Users\Luke\Desktop\RPGFL Editor>haxe -cp src/ -lib waxe -main Main -cpp bin/windows 
+haxelib run hxcpp Build.xml haxe -Dhaxe3="1" -Dhaxe_ver="3.2" -Dhxcpp_api_level="321" -Dwaxe="3.1.1" -I"C:\\HaxeToolkit\\haxe\\lib\\waxe/3,1,1/" -I"src/" -I"C:\\HaxeToolkit\\haxe\\extraLibs/" -I"" -I"C:\\HaxeToolkit\\haxe\\std/cpp/_std/" -I"C:\\HaxeToolkit\\haxe\\std/"
+cl.exe -Iinclude -nologo -O2 /WX- /fp:precise -DHX_WINDOWS -D_USING_V120_SDK71_ -GR -Oy- -c -EHs -GS- -arch:SSE -IC:/HaxeToolkit/haxe/lib/hxcpp/3,2,102/include -DHXCPP_VISIT_ALLOCS -DHXCPP_API_LEVEL=321 -D_CRT_SECURE_NO_DEPRECATE -D_ALLOW_MSC_VER_MISMATCH -D_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH -wd4996 -MT ./src/__boot__.cpp -Foobj/msvc18xp/ae7b103b___boot__.obj
+cl.exe -Iinclude -nologo -O2 /WX- /fp:precise -DHX_WINDOWS -D_USING_V120_SDK71_ -GR -Oy- -c -EHs -GS- -arch:SSE -IC:/HaxeToolkit/haxe/lib/hxcpp/3,2,102/include -DHXCPP_VISIT_ALLOCS -DHXCPP_API_LEVEL=321 -D_CRT_SECURE_NO_DEPRECATE -D_ALLOW_MSC_VER_MISMATCH -D_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH -wd4996 -MT ./src/Main.cpp -Foobj/msvc18xp/ae7b103b_Main.obj
+cl.exe -Iinclude -nologo -O2 /WX- /fp:precise -DHX_WINDOWS -D_USING_V120_SDK71_ -GR -Oy- -c -EHs -GS- -arch:SSE -IC:/HaxeToolkit/haxe/lib/hxcpp/3,2,102/include -DHXCPP_VISIT_ALLOCS -DHXCPP_API_LEVEL=321 -D_CRT_SECURE_NO_DEPRECATE -D_ALLOW_MSC_VER_MISMATCH -D_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH -wd4996 -MT ./src/__files__.cpp -Foobj/msvc18xp/ae7b103b___files__.obj
+__boot__.cpp
+__files__.cpp
+Main.cpp
+cl.exe -Iinclude -DHX_DECLARE_MAIN -nologo -O2 /WX- /fp:precise -DHX_WINDOWS -D_USING_V120_SDK71_ -GR -Oy- -c -EHs -GS- -arch:SSE -IC:/HaxeToolkit/haxe/lib/hxcpp/3,2,102/include -DHXCPP_VISIT_ALLOCS -DHXCPP_API_LEVEL=321 -D_CRT_SECURE_NO_DEPRECATE -D_ALLOW_MSC_VER_MISMATCH -D_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH -wd4996 -MT ./src/__main__.cpp -Foobj/msvc18xp/ae7b103b___main__.obj
+__main__.cpp
+link.exe -out:Main.exe -nologo -machine:x86 -subsystem:console,5.01 -libpath:lib user32.lib @obj/msvc18xp/all_objs
+   Creating library Main.lib and object Main.exp
